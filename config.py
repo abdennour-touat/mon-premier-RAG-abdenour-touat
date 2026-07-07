@@ -14,7 +14,7 @@ EMBEDDING_MODEL_NAME = "distiluse-base-multilingual-cased-v2"
 LLM_MODEL_NAME = "llama-3.3-70b-versatile"
 
 # Modèle Groq dédié à la modération (détection de prompt injection).
-MODERATION_MODEL_NAME = "meta-llama/llama-guard-4-12b"
+MODERATION_MODEL_NAME = "openai/gpt-oss-120b"
 
 # Emplacement de la base ChromaDB persistée sur disque.
 CHROMA_DB_PATH = "chroma_db"
