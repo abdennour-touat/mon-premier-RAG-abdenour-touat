@@ -83,10 +83,16 @@ class VectorDB:
         self.embedding_model_name = self.collection.metadata["embedding_model"]
         self.embedding_model = SentenceTransformer(self.embedding_model_name)
 
-    def retrieve(self, question: str, n: int = 3) -> list[dict]:
+    def retrieve(
+        self, question: str, n: int = 3, categorie: str | None = None
+    ) -> list[dict]:
         """Retourne les n chunks les plus proches de la question, triés du
         plus au moins pertinent, avec leur texte, leur source et leur
-        catégorie."""
+        catégorie.
+
+        Si `categorie` est fourni, la recherche est restreinte aux chunks
+        de cette catégorie (utile par exemple pour ne chercher que parmi
+        les faits classés "animaux")."""
         query_embedding = self.embedding_model.encode(
             [question], normalize_embeddings=True
         )
@@ -94,6 +100,7 @@ class VectorDB:
         results = self.collection.query(
             query_embeddings=query_embedding.tolist(),
             n_results=n,
+            where={"categorie": categorie} if categorie else None,
         )
 
         return [
