@@ -1,0 +1,12 @@
+id,text,source,categorie
+chunk_001,Le chat bleu de Bob s'appelle Henri.,carnet_de_bob,animaux
+chunk_002,"Henri, le chat de Bob, refuse de dormir ailleurs que sur le réfrigérateur.",carnet_de_bob,animaux
+chunk_003,"La girafe de Sophie mesure exactement 4,2 mètres et déteste les lundis.",carnet_de_bob,animaux
+chunk_004,Le vélo violet de Marc a un klaxon qui joue l'hymne national du Luxembourg.,carnet_de_bob,objets
+chunk_005,Le poisson rouge d'Amélie s'appelle Kevin et sait compter jusqu'à trois.,carnet_de_bob,animaux
+chunk_006,La grand-mère de Paul collectionne les capsules de bouteille depuis 1987.,carnet_de_bob,personnes
+chunk_007,Le parapluie jaune de Nadia se transforme en tabouret quand il pleut des grenouilles.,carnet_de_bob,objets
+chunk_008,"Le chien de Julien, Roger, aboie uniquement en alexandrins.",carnet_de_bob,animaux
+chunk_009,"La voiture rose de Karim ne roule que le mardi, pour des raisons philosophiques.",carnet_de_bob,objets
+chunk_010,"Le perroquet de Chloé, Gustave, parle couramment le morse.",carnet_de_bob,animaux
+chunk_011,Le frigo de David contient une carte au trésor cachée derrière les yaourts.,carnet_de_bob,objets
